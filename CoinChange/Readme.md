@@ -3,15 +3,16 @@
 This problem is a popular problem when introduce dynamic programming or recursive techniques algorithm topics. Here we see an explanation of the solution and two possible implementations, one recursive another non-recursive. 
 
 # Problem description
- Given a quantity change ![img](http://latex.codecogs.com/svg.latex?n), we want to know how many combinations we can obtain to give this change using coins with ![img](http://latex.codecogs.com/svg.latex?%5C%7Bs_1+%2Cs_2%2C%5Cldots%2C+s_m%5C%7D) $\{s_1 ,s_ 2,\ldots, s_m\}$ values.$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$.
- 
+ Given a quantity change ![img](http://latex.codecogs.com/svg.latex?n), we want to know how many combinations we can obtain to give this change using coins with ![img](http://latex.codecogs.com/svg.latex?%5C%7Bs_1+%2Cs_2%2C%5Cldots%2C+s_m%5C%7D) values. 
+
  For exaple for $ n=4 $ with coins $$\{1,2,3\}$$, we have $$4$$ combinations:
- 
- $$\{1,1,1,1\}$$
- $$\{1,1,2\}$$
- $$\{1,3\}$$
- $$\{2,2\}$$
- 
+
+![img](http://latex.codecogs.com/svg.latex?%5C%7B1%2C1%2C1%2C1%5C%7D)
+![img](http://latex.codecogs.com/svg.latex?%0D%0A%5C%7B1%2C1%2C2%5C%7D)
+![img](http://latex.codecogs.com/svg.latex?%0D%0A%5C%7B1%2C3%5C%7D)
+![img](http://latex.codecogs.com/svg.latex?%0D%0A%5C%7B2%2C2%5C%7D) 
+
+
  # Solution description
  The idea to resolve this problem is convert it in two smaller problems. For any coin we can form a partition, i.e. sets with intersection equal empty set, of the possible solution taking all of them that don't contain this coin, and the solution that use it.
  
