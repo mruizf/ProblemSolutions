@@ -23,7 +23,7 @@ This problem is a popular problem when introduce dynamic programming or recursiv
  
  Let's define some notation. Given a set ![img](http://latex.codecogs.com/svg.latex?%5C%7Bs_1%2Cs_2%2C%5Cldots%2Cs_m%5C%7D) of coins and a value ![img](http://latex.codecogs.com/svg.latex?n), then we define the total possible combinations to sum ![img](http://latex.codecogs.com/svg.latex?n) like ![img](http://latex.codecogs.com/svg.latex?C%28n%2C%5C%7Bs_1%2Cs_2%2C%5Cldots%2Cs_m%5C%7D%29). Then, based in the partition described in the last paragraph, we have:
  
-![img](http://latex.codecogs.com/svg.latex?C%28n%2C%5C%7Bs_1%2Cs_2%2C%5Cldots%2Cs_m%5C%7D%29+%3D+C%28n%2C%5C%7Bs_1%2Cs_2%2C%5Cldots%2Cs_%7Bm-1%7D%5C%7D%29%2BC%28n-s_m%2C%5C%7Bs_1%2Cs_2%2C%5Cldots%2Cs_m%5C%7D%29)
+![img](http://latex.codecogs.com/svg.latex?C%28n%2C%5C%7Bs_1%2Cs_2%2C%5Cldots%2Cs_m%5C%7D%29%3DC%28n%2C%5C%7Bs_1%2Cs_2%2C%5Cldots%2Cs_%7Bm-1%7D%5C%7D%29%2BC%28n-s_m%2C%5C%7Bs_1%2Cs_2%2C%5Cldots%2Cs_m%5C%7D%29)
 
 The first term on the right is the combinations that don't use the ![img](http://latex.codecogs.com/svg.latex?s_m) coin, and the second term is the number of combinations that use at last 1 time the ![img](http://latex.codecogs.com/svg.latex?s_m) coin.
 
