@@ -19,7 +19,7 @@ This problem is a popular problem when introduce dynamic programming or recursiv
  # Solution description
  The idea to resolve this problem is convert it in two smaller problems. For any coin we can form a partition, i.e. sets with intersection equal empty set, of the possible solution taking all of them that don't contain this coin, and the solution that use it.
  
- In out example, using coin with value ![img](http://latex.codecogs.com/svg.latex?2), the solutions that use this coin are: ![img](http://latex.codecogs.com/svg.latex?%5C%7B1%2C1%2C2%5C%7D%2C%5C%7B2%2C2%5C%7D%0D%0A) and the solutions dont use it are : ![img](http://latex.codecogs.com/svg.latex?%0D%0A%5C%7B1%2C1%2C1%2C1%5C%7D%2C%5C%7B1%2C3%5C%7D).
+ Last example, using coin with value ![img](http://latex.codecogs.com/svg.latex?2), the solutions that use this coin are: ![img](http://latex.codecogs.com/svg.latex?%5C%7B1%2C1%2C2%5C%7D%2C%5C%7B2%2C2%5C%7D%0D%0A) and the solutions dont use it are : ![img](http://latex.codecogs.com/svg.latex?%0D%0A%5C%7B1%2C1%2C1%2C1%5C%7D%2C%5C%7B1%2C3%5C%7D).
  
  Let's define some notation. Given a set ![img](http://latex.codecogs.com/svg.latex?%5C%7Bs_1%2Cs_2%2C%5Cldots%2Cs_m%5C%7D) of coins and a value ![img](http://latex.codecogs.com/svg.latex?n), then we define the total possible combinations to sum ![img](http://latex.codecogs.com/svg.latex?n) like ![img](http://latex.codecogs.com/svg.latex?C%28n%2C%5C%7Bs_1%2Cs_2%2C%5Cldots%2Cs_m%5C%7D%29). Then, based in the partition described in the last paragraph, we have:
  
