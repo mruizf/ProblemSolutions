@@ -8,8 +8,11 @@ This problem is a popular problem when introduce dynamic programming or recursiv
  For exaple for $ n=4 $ with coins $$\{1,2,3\}$$, we have $$4$$ combinations:
 
 ![img](http://latex.codecogs.com/svg.latex?%5C%7B1%2C1%2C1%2C1%5C%7D)
+
 ![img](http://latex.codecogs.com/svg.latex?%0D%0A%5C%7B1%2C1%2C2%5C%7D)
+
 ![img](http://latex.codecogs.com/svg.latex?%0D%0A%5C%7B1%2C3%5C%7D)
+
 ![img](http://latex.codecogs.com/svg.latex?%0D%0A%5C%7B2%2C2%5C%7D) 
 
 
