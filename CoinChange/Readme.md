@@ -5,7 +5,7 @@ This problem is a popular problem when introduce dynamic programming or recursiv
 # Problem description
  Given a quantity change ![img](http://latex.codecogs.com/svg.latex?n), we want to know how many combinations we can obtain to give this change using coins with ![img](http://latex.codecogs.com/svg.latex?%5C%7Bs_1+%2Cs_2%2C%5Cldots%2C+s_m%5C%7D) values. 
 
- For example for ![img](http://latex.codecogs.com/svg.latex?n+=+4） with coins ![img](http://latex.codecogs.com/svg.latex?%5C%7B1%2C2%2C3%5C%7D), we have ![img](http://latex.codecogs.com/svg.latex?4) combinations:
+ For example for ![img](http://latex.codecogs.com/svg.latex?n%3D4） with coins ![img](http://latex.codecogs.com/svg.latex?%5C%7B1%2C2%2C3%5C%7D), we have ![img](http://latex.codecogs.com/svg.latex?4) combinations:
 
 ![img](http://latex.codecogs.com/svg.latex?%5C%7B1%2C1%2C1%2C1%5C%7D)
 
@@ -21,7 +21,7 @@ This problem is a popular problem when introduce dynamic programming or recursiv
  
  In out example, using coin with value ![img](http://latex.codecogs.com/svg.latex?2), the solutions that use this coin are: ![img](http://latex.codecogs.com/svg.latex?%5C%7B1%2C1%2C2%5C%7D%2C%5C%7B2%2C2%5C%7D%0D%0A) and the solutions dont use it are : ![img](http://latex.codecogs.com/svg.latex?%0D%0A%5C%7B1%2C1%2C1%2C1%5C%7D%2C%5C%7B1%2C3%5C%7D).
  
- Let's define some notation. Given a set $$\{s_1 ,s_ 2,\ldots, s_m\}$$ of coins and a value $$n$$, then we define the total possible combinations to sum $$n$$ like $$C(n,\{s_1 ,s_ 2,\ldots, s_m\})$$. Then, based in the partition described in the last paragraph, we have:
+ Let's define some notation. Given a set ![img](http://latex.codecogs.com/svg.latex?%5C%7Bs_1+%2Cs_2%2C%5Cldots%2C+s_m%5C%7D) of coins and a value ![img](http://latex.codecogs.com/svg.latex?n), then we define the total possible combinations to sum ![img](http://latex.codecogs.com/svg.latex?n) like ![img](http://latex.codecogs.com/svg.latex?C%28n%2C%5C%7Bs_1+%2Cs_+2%2C%5Cldots%2C+s_m%5C%7D%29). Then, based in the partition described in the last paragraph, we have:
  
  $$C(n,\{s_1 ,s_ 2,\ldots, s_m\}) = C(n,\{s_1 ,s_2,\ldots, s_{m-1}\})+C(n-s_m,\{s_1 ,s_2,\ldots, s_m\})$$
 
