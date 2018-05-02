@@ -5,7 +5,7 @@ This problem is a popular problem when introduce dynamic programming or recursiv
 # Problem description
  Given a quantity change ![img](http://latex.codecogs.com/svg.latex?n), we want to know how many combinations we can obtain to give this change using coins with ![img](http://latex.codecogs.com/svg.latex?%5C%7Bs_1+%2Cs_2%2C%5Cldots%2C+s_m%5C%7D) values. 
 
- For example for ![img](http://latex.codecogs.com/svg.latex?n=4） with coins ![img](http://latex.codecogs.com/svg.latex?%5C%7B1%2C2%2C3%5C%7D), we have ![img](http://latex.codecogs.com/svg.latex?4) combinations:
+ For example for ![img](http://latex.codecogs.com/svg.latex?n+=+4） with coins ![img](http://latex.codecogs.com/svg.latex?%5C%7B1%2C2%2C3%5C%7D), we have ![img](http://latex.codecogs.com/svg.latex?4) combinations:
 
 ![img](http://latex.codecogs.com/svg.latex?%5C%7B1%2C1%2C1%2C1%5C%7D)
 
