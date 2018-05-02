@@ -5,7 +5,7 @@ This problem is a popular problem when introduce dynamic programming or recursiv
 # Problem description
  Given a quantity change $n$, we want to know how many combinations we can obtain to give this change using coins with $\{s_1 ,s_ 2,\ldots, s_m\}$ values.
  
- For exaple for $n=4$ with coins $$\{1,2,3\}$$, we have $$4$$ combinations:
+ For exaple for ``$n=4$`` with coins $$\{1,2,3\}$$, we have $$4$$ combinations:
  
  $$\{1,1,1,1\}$$
  $$\{1,1,2\}$$
