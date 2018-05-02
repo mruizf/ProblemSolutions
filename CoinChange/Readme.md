@@ -53,7 +53,7 @@ getWays(n,coins)
     return getWays(n,coins[1..m-1]) + getWays(n-coins[m],coins[1..m])
 }
 ```
-The C++ solution is in file recursive.cpp .
+The C++ solution is in file [recursive.cpp](https://github.com/mruizf/ProblemSolutions/blob/master/CoinChange/recursive.cpp) .
 
 # Non-recursive solution
 
@@ -93,4 +93,4 @@ getWays(n,coins)
 }
 ```
 
-The C++ solution is in file non-recursive.cpp .
+The C++ solution is in file [no_recursive.cpp](https://github.com/mruizf/ProblemSolutions/blob/master/CoinChange/no_recursive.cpp).
