@@ -30,7 +30,7 @@ The first term on the right is the combinations that don't use the ![img](http:/
 With this formula we obtain two smaller problems than the original.
 
 # Recursive solution
-Using the last formula we can obtain a direct implementation to resolve this problem, we need only consider the base cases:  when $$n \lt 0$$ then $$C(n,{s_1,\ldots})=1$$  and when $$n = 0$$, then $$C(n,{s_1,\ldots})=0$$. This is the pseudocode:
+Using the last formula we can obtain a direct implementation to resolve this problem, we need only consider the base cases:  when ![img](http://latex.codecogs.com/svg.latex?n+%5Clt+0) then $$C(n,{s_1,\ldots})=1$$  and when $$n = 0$$, then ![img](http://latex.codecogs.com/svg.latex?C%28n%2C%7Bs_1%2C%5Cldots%7D%29%3D0). This is the pseudocode:
 
 ```
 getWays(n,coins)
@@ -57,7 +57,7 @@ The C++ solution is in file recursive.cpp .
 
 # Non-recursive solution
 
-The non-recursive solution for this problem is a common example of dynamic programming. Dynamic programming and recursive solutions are similar because resolve a complex problem by breaking it down into a collection of simpler subproblems, but the main difference is that in dynamic programming you avoid to resolve the same subproblem twice. For this it is used a cache to store the subproblems solved. We will use a table, with $$m$$ rows and $$n+1$$ columns, where $$m$$ is the number of coins and $$n$$ is the original quantity, cell in row $$s$$ and column $$t$$ contain the value `C(t,coins[1..s])`.
+The non-recursive solution for this problem is a common example of dynamic programming. Dynamic programming and recursive solutions are similar because resolve a complex problem by breaking it down into a collection of simpler subproblems, but the main difference is that in dynamic programming you avoid to resolve the same subproblem twice. For this it is used a cache to store the subproblems solved. We will use a table, with ![img](http://latex.codecogs.com/svg.latex?m) rows and ![img](http://latex.codecogs.com/svg.latex?n+1) columns, where ![img](http://latex.codecogs.com/svg.latex?m) is the number of coins and ![img](http://latex.codecogs.com/svg.latex?n) is the original quantity, cell in row ![img](http://latex.codecogs.com/svg.latex?s) and column ![img](http://latex.codecogs.com/svg.latex?t) contain the value `C(t,coins[1..s])`.
 
 With this in mind we fill the table, filling each column from left to right, 
 
