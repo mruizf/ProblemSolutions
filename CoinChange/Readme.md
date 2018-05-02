@@ -21,11 +21,11 @@ This problem is a popular problem when introduce dynamic programming or recursiv
  
  In out example, using coin with value ![img](http://latex.codecogs.com/svg.latex?2), the solutions that use this coin are: ![img](http://latex.codecogs.com/svg.latex?%5C%7B1%2C1%2C2%5C%7D%2C%5C%7B2%2C2%5C%7D%0D%0A) and the solutions dont use it are : ![img](http://latex.codecogs.com/svg.latex?%0D%0A%5C%7B1%2C1%2C1%2C1%5C%7D%2C%5C%7B1%2C3%5C%7D).
  
- Let's define some notation. Given a set ![img](http://latex.codecogs.com/svg.latex?%5C%7Bs_1%2Cs_2%2C%5Cldots%2C+s_m%5C%7D) of coins and a value ![img](http://latex.codecogs.com/svg.latex?n), then we define the total possible combinations to sum ![img](http://latex.codecogs.com/svg.latex?n) like ![img](http://latex.codecogs.com/svg.latex?C%28n%2C%5C%7Bs_1%2Cs_+2%2C%5Cldots%2C+s_m%5C%7D%29). Then, based in the partition described in the last paragraph, we have:
+ Let's define some notation. Given a set ![img](http://latex.codecogs.com/svg.latex?%5C%7Bs_1%2Cs_2%2C%5Cldots%2C+s_m%5C%7D) of coins and a value ![img](http://latex.codecogs.com/svg.latex?n), then we define the total possible combinations to sum ![img](http://latex.codecogs.com/svg.latex?n) like ![img](http://latex.codecogs.com/svg.latex?C%28n%2C%5C%7Bs_1%2Cs_2%2C%5Cldots%2C+s_m%5C%7D%29). Then, based in the partition described in the last paragraph, we have:
  
 ![img](http://latex.codecogs.com/svg.latex?C%28n%2C%5C%7Bs_1%2Cs_2%2C%5Cldots%2C+s_m%5C%7D%29+%3D+C%28n%2C%5C%7Bs_1%2Cs_2%2C%5Cldots%2C+s_%7Bm-1%7D%5C%7D%29%2BC%28n-s_m%2C%5C%7Bs_1%2Cs_2%2C%5Cldots%2C+s_m%5C%7D%29)
 
-The first term on the right is the combinations that don't use the $$s_m$$ coin, and the second term is the combinations that use at last 1 time the same coin.
+The first term on the right is the combinations that don't use the ![img](http://latex.codecogs.com/svg.latex?s_m) coin, and the second term is the number of combinations that use at last 1 time the ![img](http://latex.codecogs.com/svg.latex?s_m) coin.
 
 With this formula we obtain two smaller problems than the original.
 
