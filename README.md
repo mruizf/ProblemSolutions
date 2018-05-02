@@ -1,11 +1,2 @@
 # ProblemSolutions
-Solutions to problems in Hacker Rank and other similar websites
-
-$$
-n
-$$
-
-En medio del texto $n$.
-
-
-Hola mundo ![img](http://latex.codecogs.com/svg.latex?%5Cfrac%7B%5Csigma%7D%7B%5Cmu%7D) esto es una lata.
+Here I will upload the solution for some problem we resolve in sites like hacker rank. Some of this problems have interesting soluitons, for this I add some explanaiton. If you found some interesting please let me know it.
