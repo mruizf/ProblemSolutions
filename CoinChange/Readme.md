@@ -30,7 +30,7 @@ The first term on the right is the combinations that don't use the ![img](http:/
 With this formula we obtain two smaller problems than the original.
 
 # Recursive solution
-Using the last formula we can obtain a direct implementation to resolve this problem, we need only consider the base cases:  when ![img](http://latex.codecogs.com/svg.latex?n+%5Clt+0) then ![img](http://latex.codecogs.com/svg.latex?C%28n%2C%7Bs_1%2C%5Cldots%7D%29%3D1)  and when n = 0, then ![img](http://latex.codecogs.com/svg.latex?C%28n%2C%7Bs_1%2C%5Cldots%7D%29%3D0). This is the pseudocode:
+Using the last formula we can obtain a direct implementation to resolve this problem, we need only consider the base cases:  when n=1 then ![img](http://latex.codecogs.com/svg.latex?C%28n%2C%5C%7Bs_1%2C%5Cldots%7D%29%3D1)  and when n < 0, then ![img](http://latex.codecogs.com/svg.latex?C%28n%2C%5C%7Bs_1%2C%5Cldots%7D%29%3D0). This is the pseudocode:
 
 ```
 getWays(n,coins)
