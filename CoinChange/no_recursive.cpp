@@ -41,7 +41,7 @@ int main() {
     }
     
     // Print the number of ways of making change for 'n' units using coins having the values given by 'c'
-    long ways = getWays(n, c);
+    long    ways = getWays(n, c);
     cout << ways << endl;
     return 0;
 }
